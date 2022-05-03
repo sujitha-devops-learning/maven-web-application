@@ -25,7 +25,7 @@ def slackNotifications(String buildStatus = 'STARTED') {
 }
 
 
-node{
+node('slaves'){
 echo "build nuber is: ${env.BUILD_NUMBER}"
 echo "job name is:  ${env.JOB_NAME}"
 echo "node name is:  ${env.NODE_NAME}"
